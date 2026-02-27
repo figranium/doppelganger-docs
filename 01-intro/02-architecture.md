@@ -11,7 +11,7 @@ Doppelganger is composed of three main layers:
 3.  **Browser Engine (Playwright)**
 
 ### 1. Frontend Layer
-*   **Technology**: React 19, TypeScript, Vite, Tailwind CSS.
+*   **Technology**: React, TypeScript, Vite, Tailwind CSS.
 *   **Purpose**: Provides the visual interface for creating tasks, managing settings, viewing execution logs, and inspecting captured data.
 *   **Components**:
     *   **Dashboard**: Overview of tasks and recent activity.
