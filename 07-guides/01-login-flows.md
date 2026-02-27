@@ -14,37 +14,37 @@ Inspect the login page (Headful mode is great for this). Find:
 Create a new **Agent** task.
 
 ### Step 1: Navigate
-*   **Action**: `navigate`
+*   **Action**: **Navigate** (`navigate`)
 *   **Value**: `https://example.com/login`
 
 ### Step 2: Wait for Load
-*   **Action**: `wait_selector`
+*   **Action**: **Wait for Element** (`wait_selector`)
 *   **Selector**: `#username` (Ensure inputs are ready)
 
 ### Step 3: Input Credentials
-*   **Action**: `type`
+*   **Action**: **Type** (`type`)
     *   Selector: `#username`
     *   Value: `{$user}` (Use a variable!)
-*   **Action**: `type`
+*   **Action**: **Type** (`type`)
     *   Selector: `#password`
     *   Value: `{$pass}`
 
 ### Step 4: Submit
-*   **Action**: `click`
+*   **Action**: **Click** (`click`)
     *   Selector: `button[type="submit"]`
 
 ### Step 5: Verification (Crucial!)
-*   **Action**: `wait`
+*   **Action**: **Wait** (`wait`)
     *   Value: `2` (Allow redirect time)
-*   **Action**: `if`
+*   **Action**: **Condition** (`if`)
     *   Condition: `exists('.dashboard')`
-*   **Inside If**:
-    *   **Action**: `stop`
+*   **Inside Condition**:
+    *   **Action**: **Stop** (`stop`)
         *   Value: `success`
 *   **Else**:
-    *   **Action**: `stop`
+    *   **Action**: **Stop** (`stop`)
         *   Value: `failure` (Login failed)
-*   **End If**
+*   **End Condition**
 
 ## 3. Handling 2FA / CAPTCHA
 If the site uses CAPTCHA or 2FA, fully automated login might be impossible.

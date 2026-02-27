@@ -2,9 +2,9 @@
 
 Doppelganger allows you to execute custom JavaScript in the browser context at any point in a task. This is the most powerful feature for handling complex logic, data transformation, and unsupported interactions.
 
-## The `javascript` Block
+## The **Run JavaScript** Block
 
-Add a **Javascript** action block to your task.
+Add a **Run JavaScript** action block (internally `javascript`) to your task.
 
 ### Execution Context
 The code runs directly in the browser console (via `page.evaluate()`).
