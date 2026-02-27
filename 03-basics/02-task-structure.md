@@ -1,6 +1,8 @@
 # Task Structure (JSON)
 
-Doppelganger tasks are defined by a JSON object. This structure is used both internally by the storage system and externally when importing/exporting tasks or using the API.
+Tasks are primarily built using **Action Blocks**, which define the steps the browser should take. The JSON structure below represents how these tasks are stored internally, or when importing/exporting.
+
+While the JSON schema is useful for API integrations, most users will interact with tasks through the visual editor using Action Blocks.
 
 ## Full Schema
 
@@ -55,7 +57,7 @@ Doppelganger tasks are defined by a JSON object. This structure is used both int
 *   `headful`: Opens a visible browser window for debugging (requires VNC).
 
 ### `actions`
-An array of steps to execute. See [Action Blocks](../03-basics/03-action-blocks.md) for details.
+An array of steps to execute. See [Action Blocks](../03-basics/03-action-blocks.md) for details on each available block type.
 
 ### `variables`
 Dynamic values that can be injected into `url`, `selector`, `value`, or scripts using `{$varName}` syntax.

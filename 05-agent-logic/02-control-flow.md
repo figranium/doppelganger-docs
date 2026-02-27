@@ -2,9 +2,9 @@
 
 Doppelganger provides robust control flow mechanisms to handle dynamic web pages, pagination, and multi-step processes.
 
-## Conditional Execution (`if`)
+## Conditional Execution (**Condition**)
 
-The `if` block executes a sequence of actions only when a condition is met.
+The **Condition** block (internally `if`) executes a sequence of actions only when a condition is met.
 
 ### Syntax
 *   **Type**: `if`
@@ -40,16 +40,16 @@ The `if` block executes a sequence of actions only when a condition is met.
 }
 ```
 
-## Loops (`while`, `repeat`, `foreach`)
+## Loops (**While Loop**, **Repeat**, **Loop Elements**)
 
-### While Loop
+### **While Loop**
 Executes a block of actions repeatedly as long as the condition remains true.
 
 *   **Type**: `while`
 *   **Condition**: Same as `if`.
 *   **Usage**: Pagination, waiting for a specific state.
 
-### Foreach Loop
+### **Loop Elements** (`foreach`)
 Iterates over a list of elements matching a selector.
 
 *   **Type**: `foreach`
@@ -58,15 +58,15 @@ Iterates over a list of elements matching a selector.
     *   **Scope**: Actions inside the loop are scoped to the current element. `click` without a selector clicks the current item.
 *   **Usage**: Scraping lists of products, processing table rows.
 
-### Repeat Loop
+### **Repeat**
 Executes a block a fixed number of times.
 
 *   **Type**: `repeat`
 *   **Value**: Number of iterations.
 
-## Error Handling (`on_error`)
+## Error Handling (**Error Handler**)
 
-The `on_error` block acts like a `try/catch`. If any action within the main flow fails (e.g., timeout, element not found), execution jumps to the `on_error` block.
+The **Error Handler** block (internally `on_error`) acts like a `try/catch`. If any action within the main flow fails (e.g., timeout, element not found), execution jumps to the **Error Handler** block.
 
 *   **Usage**: Handling CAPTCHAs, closing popups, retry logic.
 *   **Resume**: After the error block, execution can stop or continue (advanced).
