@@ -13,20 +13,7 @@ Click **Add Proxy** and enter the details:
 *   **Label**: A friendly name (e.g., "US Residential").
 
 ### Importing Proxies
-You can bulk import proxies using a JSON file or paste a list. The format is:
-
-```json
-[
-  {
-    "server": "http://user:pass@proxy1.com:8080",
-    "label": "Proxy 1"
-  },
-  {
-    "server": "socks5://proxy2.com:1080",
-    "label": "Proxy 2"
-  }
-]
-```
+You can bulk import proxies using a JSON or text file
 
 ## Rotation Strategies
 
