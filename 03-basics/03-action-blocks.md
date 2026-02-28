@@ -19,12 +19,12 @@ Types text into an input field. Use this for filling out forms or search bars.
 Pauses execution for a fixed duration. Use this when you need a simple delay, though **Wait for Element** is often more reliable.
 *   **Value**: Duration in seconds (e.g., `2.5`).
 
-### **Wait for Element** (`wait_selector`)
+### **Wait for Selector** (`wait_selector`)
 Waits until a specific element appears in the DOM. Use this to ensure the page has loaded the content you need before proceeding.
 *   **Selector**: The element to wait for.
 *   **Value**: Timeout in seconds (default: 30).
 
-### **Press Key** (`press`)
+### **Press** (`press`)
 Simulates a keyboard key press. Use this for navigation keys like `Enter`, `Tab`, or `Escape`.
 *   **Key**: The key name (e.g., `Enter`, `Tab`, `Escape`, `ArrowDown`).
 *   **Selector**: (Optional) Focus this element before pressing.
@@ -44,29 +44,29 @@ Redirects the browser to a new URL. Use this to start a flow or move to a differ
 
 ## Logic & Flow Control
 
-### **Condition** (`if` / `else` / `end`)
+### **If** (`if` / `else` / `end`)
 Conditional execution block. Use this to handle dynamic situations, like closing a popup only if it appears.
 *   **Condition**: A JavaScript expression (e.g., `exists('.error')`).
 *   **Selector**: (Structured mode) Target element.
 *   **Operator**: `equals`, `contains`, `exists`, etc.
 
-### **While Loop** (`while` / `end`)
+### **While** (`while` / `end`)
 Repeats a block of actions while a condition is true. Use this for pagination or waiting for a specific state change.
 *   **Condition**: Same as `if`.
 *   **Value**: (Optional) Max iterations to prevent infinite loops.
 
-### **Loop Elements** (`foreach` / `end`)
+### **For Each** (`foreach` / `end`)
 Iterates over a list of elements. Use this to scrape lists of items, like search results or product cards.
 *   **Selector**: The elements to iterate (e.g., `.product-item`).
 *   **Var Name**: Variable to store the current element index/data.
 
-### **Repeat** (`repeat` / `end`)
+### **Repeat N** (`repeat` / `end`)
 Repeats a block N times. Use this when you know exactly how many times an action needs to happen.
 *   **Value**: Number of repetitions.
 
 ## Advanced Actions
 
-### **Run JavaScript** (`javascript`)
+### **JavaScript** (`javascript`)
 Executes custom JavaScript in the browser context. Use this for complex logic, data extraction, or interactions not supported by other blocks.
 *   **Value**: The JS code (e.g., `return document.title;`).
 *   **Output**: The return value is stored in `block.output` for subsequent steps.
@@ -76,7 +76,7 @@ Takes a screenshot at the current state. Use this for debugging or keeping recor
 *   **Value**: (Optional) Filename suffix.
 *   **Selector**: (Optional) Capture only this element.
 
-### **Stop**
+### **Stop Task**
 Immediately stops the task execution. Use this to end the task early based on a condition (e.g., login success).
 *   **Value**: Exit status (e.g., `success`, `failure`).
 
@@ -89,5 +89,5 @@ Updates a runtime variable. Use this to store calculations or flags for later us
 Waits for file downloads to complete. Use this after clicking a download button to ensure the file is saved.
 *   **Value**: Timeout in seconds.
 
-### **Error Handler** (`on_error`)
+### **On Error** (`on_error`)
 Defines a block of actions to run if an error occurs in the main flow. Use this to implement retry logic or graceful failures (try/catch).
