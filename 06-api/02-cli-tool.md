@@ -34,7 +34,7 @@ doppelganger --scrape --url "https://example.com" --selector ".content"
 - `--selector`: CSS selector to extract text from.
 - `--output`: (Optional) File to save the result.
 
-#### Headful Mode (`--headful`)
+#### Headful Execution (`--headful`)
 
 Launches a visible browser session for debugging.
 

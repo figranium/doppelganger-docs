@@ -60,7 +60,10 @@ PORT=8080 SESSION_SECRET=mysecret npx @doppelgangerdev/doppelganger
 The NPM package also exposes specific scripts for different modes:
 
 - **Scraper Mode**: `doppelganger --scrape` (Runs the high-performance scraper).
-- **Headful Mode**: `doppelganger --headful` (Runs the interactive browser).
 - **Agent Mode**: `doppelganger --agent` (Runs the full automation agent).
+
+Additionally, you can run a debugging session:
+
+- **Headful Execution**: `doppelganger --headful` (Opens the interactive browser for debugging).
 
 For more details on CLI usage, see [CLI Tool Documentation](../06-api/02-cli-tool.md).

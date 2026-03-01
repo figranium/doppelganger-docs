@@ -28,7 +28,7 @@ Doppelganger is composed of three main layers:
   - `server.js`: The main entry point, handling HTTP routes (`/api/*`) and WebSocket/SSE streams.
   - `agent.js`: The core logic for executing "Agent" mode tasks (complex flows with logic).
   - `scrape.js`: A specialized runner for high-performance, single-page data extraction.
-  - `headful.js`: Manages interactive, visible browser sessions (VNC/debugging).
+  - `headful.js`: Manages interactive, visible browser sessions for debugging and manual intervention.
   - `storage.js`: Handles file-based persistence for tasks, executions, and settings.
 
 ### 3. Browser Engine Layer

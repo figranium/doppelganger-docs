@@ -35,7 +35,7 @@ Common issues and solutions when running Doppelganger.
 
 - **Cause**: The selector is incorrect or the element loads dynamically.
 - **Fix**:
-  - Use **Headful Mode** to inspect the page live.
+  - Use **Headful Debugging** to inspect the page live.
   - Increase `wait` time before the action.
   - Use `wait_selector` explicitly.
   - Check for iframes (Doppelganger does not support cross-origin iframes yet).
