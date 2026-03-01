@@ -10,7 +10,7 @@ While the JSON schema is useful for API integrations, most users will interact w
 {
   "id": "task_123456789",
   "name": "My Automation Task",
-  "mode": "agent", // "agent" | "scrape" | "headful"
+  "mode": "agent", // "agent" | "scrape"
   "url": "https://example.com",
   "wait": 2, // Initial wait time in seconds
   "rotateUserAgents": false,
@@ -55,7 +55,6 @@ While the JSON schema is useful for API integrations, most users will interact w
 
 - `agent`: Executes a sequence of actions (click, type, etc.). Most powerful.
 - `scrape`: Simple "visit and extract" mode. Useful for static pages.
-- `headful`: Opens a visible browser window for debugging (requires VNC).
 
 ### `actions`
 

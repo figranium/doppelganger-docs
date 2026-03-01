@@ -1,6 +1,6 @@
-# Headful Mode (VNC)
+# Headful Debugging (VNC)
 
-Doppelganger includes a powerful **Headful Browser Mode** that allows you to see and interact with the automation as it runs. This is powered by a VNC server running alongside the Playwright container.
+Doppelganger includes powerful **Headful Debugging** capabilities that allow you to see and interact with the automation as it runs. This is powered by a VNC server running alongside the Playwright container.
 
 ## Why Headful?
 
@@ -11,9 +11,8 @@ Doppelganger includes a powerful **Headful Browser Mode** that allows you to see
 
 ## Starting a Headful Session
 
-1.  **Dashboard**: Click `+ New Task` and select **Headful** mode.
-2.  **Editor**: Set the target URL.
-3.  **Run**: Click **Run Task**.
+1.  **Editor**: Open a task in the editor.
+2.  **Run**: Click **Open Browser** in the editor panel to log in or debug visually.
 
 The browser window will open inside the VNC viewer embedded in the UI.
 
@@ -29,7 +28,7 @@ The VNC interface provides a standard desktop environment:
 
 Headful sessions share the same **Cookie Jar** (`storage_state.json`) as automated tasks. This means:
 
-1.  **Login once**: Log in manually in Headful mode.
+1.  **Login once**: Log in manually in the headful session.
 2.  **Automate**: Run an Agent task that reuses the session cookies.
 
 **Stateless Option**: Enable `statelessExecution` to launch a clean, incognito-like session that won't save cookies.
@@ -48,4 +47,4 @@ The response includes the VNC connection URL.
 
 ## Stopping
 
-Click **Stop Headful** in the Editor to terminate the session and close the browser. This ensures resources are freed.
+Click **Close Browser** in the Editor to terminate the session and close the browser. This ensures resources are freed.

@@ -20,7 +20,7 @@ Doppelganger uses environment variables to configure key aspects of the server a
 | `AUTH_RATE_LIMIT_MAX` | `10`          | Max failed login attempts per window (15 mins).          |
 | `DATA_RATE_LIMIT_MAX` | `100`         | Max data requests (captures, logs) per window (15 mins). |
 
-## VNC / Headful Mode
+## VNC / Headful Debugging
 
 | Variable     | Default Value | Description                       |
 | :----------- | :------------ | :-------------------------------- |

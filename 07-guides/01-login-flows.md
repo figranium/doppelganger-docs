@@ -4,7 +4,7 @@ Automating login flows is a common use case for Doppelganger. This guide walks y
 
 ## 1. Identify Selectors
 
-Inspect the login page (Headful mode is great for this). Find:
+Inspect the login page (Headful debugging is great for this). Find:
 
 - Username input (e.g., `#username`, `input[name="email"]`)
 - Password input (e.g., `#password`)
@@ -58,7 +58,7 @@ Create a new **Agent** task.
 
 If the site uses CAPTCHA or 2FA, fully automated login might be impossible.
 
-- **Option A**: Use **Headful Mode** to log in manually once. Cookies are saved to `storage_state.json`. Subsequent tasks reuse this session.
+- **Option A**: Use **Headful Debugging** to log in manually once. Cookies are saved to `storage_state.json`. Subsequent tasks reuse this session.
 - **Option B**: Use an external CAPTCHA solving service (requires custom JS integration).
 
 ## 4. Reusing the Session

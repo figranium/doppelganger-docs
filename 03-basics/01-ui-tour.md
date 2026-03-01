@@ -10,7 +10,7 @@ Doppelganger's user interface is designed for simplicity and power. It consists 
   - **Import/Export**: Use the `Import` and `Export` buttons to move tasks between environments (JSON format).
   - **Edit**: Click any task card to open the editor.
   - **Delete**: Remove tasks permanently.
-- **Status Indicators**: Shows the task mode (Agent, Scraper, Headful) and target URL.
+- **Status Indicators**: Shows the task mode (Agent, Scraper) and target URL.
 
 ## 2. Editor (`/tasks/:id`)
 
@@ -18,7 +18,7 @@ The core of Doppelganger. This screen is split into two panes:
 
 - **Left Pane (Configuration)**:
   - **Task Name**: Rename your task.
-  - **Mode Selector**: Switch between `Agent` (block-based), `Scraper` (simple extraction), and `Headful` (interactive).
+  - **Mode Selector**: Switch between `Agent` (block-based) and `Scraper` (simple extraction).
   - **View Mode**: Toggle between `Visual` (blocks), `JSON` (raw code), and `API` (integration details).
   - **Target URL**: The starting point for the automation.
   - **Actions List**: Drag-and-drop list of steps (Click, Type, Wait, etc.).
