@@ -3,9 +3,10 @@
 This guide covers the recommended installation method using Docker Compose. This ensures a consistent environment across different platforms (Linux, macOS, Windows).
 
 ## Prerequisites
-*   [Git](https://git-scm.com/downloads) installed.
-*   [Docker](https://docs.docker.com/get-docker/) installed and running.
-*   [Docker Compose](https://docs.docker.com/compose/install/) (usually included with Docker Desktop).
+
+- [Git](https://git-scm.com/downloads) installed.
+- [Docker](https://docs.docker.com/get-docker/) installed and running.
+- [Docker Compose](https://docs.docker.com/compose/install/) (usually included with Docker Desktop).
 
 ## Step-by-Step Installation
 
@@ -45,6 +46,7 @@ docker compose up --build -d
 ```
 
 This command will:
+
 1.  Build the Doppelganger Docker image.
 2.  Start the container and map port `11345` (default) to your host.
 3.  Mount the `data/` directory to persist your tasks and settings.
@@ -60,6 +62,7 @@ You should see the Doppelganger dashboard or setup screen.
 ## Managing the Container
 
 ### View Logs
+
 To view the application logs:
 
 ```bash
@@ -67,6 +70,7 @@ docker compose logs -f
 ```
 
 ### Stop the Application
+
 To stop the container:
 
 ```bash
@@ -74,6 +78,7 @@ docker compose down
 ```
 
 ### Update the Application
+
 To update to the latest version, pull the changes and rebuild:
 
 ```bash
@@ -85,7 +90,7 @@ docker compose up --build -d
 
 Doppelganger uses a `data/` volume mount to ensure your tasks, proxies, and settings persist even if you delete the container.
 
-*   `./data`: Stores `tasks.json`, `proxies.json`, `settings.json`, and execution logs.
-*   `./public/captures`: Stores screenshots and recordings.
+- `./data`: Stores `tasks.json`, `proxies.json`, `settings.json`, and execution logs.
+- `./public/captures`: Stores screenshots and recordings.
 
 If you need to backup your data, simply copy the `data/` folder.

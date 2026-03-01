@@ -11,42 +11,45 @@ Doppelganger is composed of three main layers:
 3.  **Browser Engine (Playwright)**
 
 ### 1. Frontend Layer
-*   **Technology**: React, TypeScript, Vite, Tailwind CSS.
-*   **Purpose**: Provides the visual interface for creating tasks, managing settings, viewing execution logs, and inspecting captured data.
-*   **Components**:
-    *   **Dashboard**: Overview of tasks and recent activity.
-    *   **Editor**: A drag-and-drop block editor for defining automation logic.
-    *   **Settings**: Configuration panels for proxies, API keys, and system preferences.
-    *   **Captures**: Visual gallery for screenshots and video recordings.
+
+- **Technology**: React, TypeScript, Vite, Tailwind CSS.
+- **Purpose**: Provides the visual interface for creating tasks, managing settings, viewing execution logs, and inspecting captured data.
+- **Components**:
+  - **Dashboard**: Overview of tasks and recent activity.
+  - **Editor**: A drag-and-drop block editor for defining automation logic.
+  - **Settings**: Configuration panels for proxies, API keys, and system preferences.
+  - **Captures**: Visual gallery for screenshots and video recordings.
 
 ### 2. Backend Layer
-*   **Technology**: Node.js, Express.js.
-*   **Purpose**: Serves the API, manages data persistence, and orchestrates browser automation.
-*   **Key Modules**:
-    *   `server.js`: The main entry point, handling HTTP routes (`/api/*`) and WebSocket/SSE streams.
-    *   `agent.js`: The core logic for executing "Agent" mode tasks (complex flows with logic).
-    *   `scrape.js`: A specialized runner for high-performance, single-page data extraction.
-    *   `headful.js`: Manages interactive, visible browser sessions (VNC/debugging).
-    *   `storage.js`: Handles file-based persistence for tasks, executions, and settings.
+
+- **Technology**: Node.js, Express.js.
+- **Purpose**: Serves the API, manages data persistence, and orchestrates browser automation.
+- **Key Modules**:
+  - `server.js`: The main entry point, handling HTTP routes (`/api/*`) and WebSocket/SSE streams.
+  - `agent.js`: The core logic for executing "Agent" mode tasks (complex flows with logic).
+  - `scrape.js`: A specialized runner for high-performance, single-page data extraction.
+  - `headful.js`: Manages interactive, visible browser sessions (VNC/debugging).
+  - `storage.js`: Handles file-based persistence for tasks, executions, and settings.
 
 ### 3. Browser Engine Layer
-*   **Technology**: Playwright (Chromium).
-*   **Purpose**: Executes the actual browser interactions (clicking, typing, navigating).
-*   **Features**:
-    *   **Context Isolation**: Each task runs in a fresh or persistent browser context, depending on configuration.
-    *   **Stealth Plugin**: Integrates `puppeteer-extra-plugin-stealth` to evade bot detection.
-    *   **Network Interception**: Captures network requests/responses for debugging and data extraction.
+
+- **Technology**: Playwright (Chromium).
+- **Purpose**: Executes the actual browser interactions (clicking, typing, navigating).
+- **Features**:
+  - **Context Isolation**: Each task runs in a fresh or persistent browser context, depending on configuration.
+  - **Stealth Plugin**: Integrates `puppeteer-extra-plugin-stealth` to evade bot detection.
+  - **Network Interception**: Captures network requests/responses for debugging and data extraction.
 
 ## Data Storage
 
 Doppelganger uses a **file-based storage system** by default, keeping all data local to the deployment directory. This simplifies backup and migration.
 
-*   `data/tasks.json`: Stores task definitions.
-*   `data/executions.json`: Logs execution history and metadata.
-*   `data/proxies.json`: Stores proxy configurations.
-*   `data/settings.json`: Stores system settings (API keys, user agents).
-*   `public/captures/`: Stores screenshots and video recordings.
-*   `storage_state.json`: Stores browser cookies and local storage state (if persistence is enabled).
+- `data/tasks.json`: Stores task definitions.
+- `data/executions.json`: Logs execution history and metadata.
+- `data/proxies.json`: Stores proxy configurations.
+- `data/settings.json`: Stores system settings (API keys, user agents).
+- `public/captures/`: Stores screenshots and video recordings.
+- `storage_state.json`: Stores browser cookies and local storage state (if persistence is enabled).
 
 ## Execution Flow
 

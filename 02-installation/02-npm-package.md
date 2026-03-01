@@ -3,8 +3,9 @@
 This guide covers installing Doppelganger as a standalone NPM package. This is ideal for quickly testing Doppelganger without cloning the repository or using Docker.
 
 ## Prerequisites
-*   [Node.js](https://nodejs.org/) (LTS recommended, v18+).
-*   [NPM](https://docs.npmjs.com/) or Yarn installed.
+
+- [Node.js](https://nodejs.org/) (LTS recommended, v18+).
+- [NPM](https://docs.npmjs.com/) or Yarn installed.
 
 ## Global Installation (Recommended)
 
@@ -58,8 +59,8 @@ PORT=8080 SESSION_SECRET=mysecret npx @doppelgangerdev/doppelganger
 
 The NPM package also exposes specific scripts for different modes:
 
-*   **Scraper Mode**: `doppelganger --scrape` (Runs the high-performance scraper).
-*   **Headful Mode**: `doppelganger --headful` (Runs the interactive browser).
-*   **Agent Mode**: `doppelganger --agent` (Runs the full automation agent).
+- **Scraper Mode**: `doppelganger --scrape` (Runs the high-performance scraper).
+- **Headful Mode**: `doppelganger --headful` (Runs the interactive browser).
+- **Agent Mode**: `doppelganger --agent` (Runs the full automation agent).
 
 For more details on CLI usage, see [CLI Tool Documentation](../06-api/02-cli-tool.md).

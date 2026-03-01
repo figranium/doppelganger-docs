@@ -4,10 +4,10 @@ Doppelganger includes a powerful **Headful Browser Mode** that allows you to see
 
 ## Why Headful?
 
-*   **Debugging**: Step through tasks visually to identify why a selector fails.
-*   **Manual Intervention**: Solve CAPTCHAs or complete complex 2FA flows that automation cannot handle.
-*   **Exploration**: Browse sites naturally to discover selectors and API endpoints.
-*   **Recording**: Create high-fidelity video demonstrations of your automation.
+- **Debugging**: Step through tasks visually to identify why a selector fails.
+- **Manual Intervention**: Solve CAPTCHAs or complete complex 2FA flows that automation cannot handle.
+- **Exploration**: Browse sites naturally to discover selectors and API endpoints.
+- **Recording**: Create high-fidelity video demonstrations of your automation.
 
 ## Starting a Headful Session
 
@@ -20,13 +20,15 @@ The browser window will open inside the VNC viewer embedded in the UI.
 ## Controls
 
 The VNC interface provides a standard desktop environment:
-*   **Mouse/Keyboard**: Full interaction support.
-*   **Clipboard**: Copy/paste text between your host and the remote browser.
-*   **Resolution**: The viewport resizes dynamically (default 1280x720).
+
+- **Mouse/Keyboard**: Full interaction support.
+- **Clipboard**: Copy/paste text between your host and the remote browser.
+- **Resolution**: The viewport resizes dynamically (default 1280x720).
 
 ## Persistence
 
 Headful sessions share the same **Cookie Jar** (`storage_state.json`) as automated tasks. This means:
+
 1.  **Login once**: Log in manually in Headful mode.
 2.  **Automate**: Run an Agent task that reuses the session cookies.
 
