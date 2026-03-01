@@ -7,35 +7,42 @@ Doppelganger allows you to execute custom JavaScript in the browser context at a
 Add a **Run JavaScript** action block (internally `javascript`) to your task.
 
 ### Execution Context
+
 The code runs directly in the browser console (via `page.evaluate()`).
-*   **Scope**: Global `window` object is available.
-*   **DOM**: Full access to `document`, `querySelector`, etc.
-*   **Variables**: Access runtime variables using `{$varName}` syntax.
+
+- **Scope**: Global `window` object is available.
+- **DOM**: Full access to `document`, `querySelector`, etc.
+- **Variables**: Access runtime variables using `{$varName}` syntax.
 
 ### Return Values
+
 The return value of your script is captured and stored in `block.output`.
-*   **String/Number/Boolean**: Saved directly.
-*   **Object/Array**: Automatically JSON stringified.
-*   **Promise**: Doppelganger awaits the promise resolution.
+
+- **String/Number/Boolean**: Saved directly.
+- **Object/Array**: Automatically JSON stringified.
+- **Promise**: Doppelganger awaits the promise resolution.
 
 ### Examples
 
 **1. Extract Text Content**
+
 ```javascript
-return document.querySelector('.price').innerText;
+return document.querySelector(".price").innerText;
 ```
 
 **2. Scroll to Bottom**
+
 ```javascript
 window.scrollTo(0, document.body.scrollHeight);
 return true; // Simple confirmation
 ```
 
 **3. Complex Logic**
+
 ```javascript
-const items = document.querySelectorAll('.item');
+const items = document.querySelectorAll(".item");
 let total = 0;
-items.forEach(item => {
+items.forEach((item) => {
   const price = parseFloat(item.dataset.price);
   if (price > 100) total += price;
 });
@@ -43,6 +50,7 @@ return total;
 ```
 
 **4. Using Variables**
+
 ```javascript
 const user = "{$username}"; // Injected by Doppelganger
 document.cookie = `user=${user}; path=/`;

@@ -10,19 +10,22 @@ Doppelganger supports rotating through a list of proxies or using a single backc
 4. **Important: Check the format.** Doppelganger's importer expects one of the following formats:
    - `host:port:username:password` (Standard Webshare format)
    - `protocol://username:password@host:port` (URL format)
-   
+
    Ensure your Webshare download configuration matches the `IP:Port:Username:Password` order.
 
 ## 2. Importing into Doppelganger
 
 ### Option A: Bulk Import (Recommended for lists)
+
 1. Open Doppelganger and go to **Settings** > **Proxies**.
 2. Click the **Import** button.
 3. Select the `.txt` file you downloaded from Webshare.
 4. Doppelganger will automatically parse the lines and add them to your list.
 
 ### Option B: Manual Add (Recommended for Backconnect/Rotating Proxies)
+
 If you are using Webshare's **Backconnect** (rotating) proxy (e.g., `p.webshare.io`):
+
 1. In **Settings** > **Proxies**, enter the server (e.g., `p.webshare.io:80`).
 2. Enter your **Username** and **Password**.
 3. Check the **Rotating pool** box.
@@ -36,5 +39,4 @@ If you are using Webshare's **Backconnect** (rotating) proxy (e.g., `p.webshare.
 - **Rotation Mode**: Choose between **Round Robin** (sequential) or **Random** rotation.
 - **Task Specific**: You can override the proxy settings within a specific task's configuration if needed.
 
-
-> *Tip: If your proxies are IP-authorized instead of password-authorized, you only need to provide the `host:port` and ensure your server's IP is whitelisted on Webshare.*
+> _Tip: If your proxies are IP-authorized instead of password-authorized, you only need to provide the `host:port` and ensure your server's IP is whitelisted on Webshare._

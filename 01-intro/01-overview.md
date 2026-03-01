@@ -13,14 +13,14 @@ At its core, Doppelganger combines the power of **Playwright** for browser instr
 
 ## What Can You Build?
 
-*   **Data Scrapers**: Extract structured data (JSON/CSV) from websites, handling pagination and dynamic content.
-*   **Authentication Bots**: Automate login flows to refresh cookies or session tokens for other applications.
-*   **Testing Agents**: Run end-to-end tests on your own web applications with visual feedback.
-*   **Workflow Automation**: Fill out forms, upload files, or interact with complex single-page applications (SPAs).
+- **Data Scrapers**: Extract structured data (JSON/CSV) from websites, handling pagination and dynamic content.
+- **Authentication Bots**: Automate login flows to refresh cookies or session tokens for other applications.
+- **Testing Agents**: Run end-to-end tests on your own web applications with visual feedback.
+- **Workflow Automation**: Fill out forms, upload files, or interact with complex single-page applications (SPAs).
 
 ## Core Components
 
-*   **Dashboard**: Manage your library of tasks and view execution history.
-*   **Task Editor**: A drag-and-drop interface to build automation flows with real-time validation.
-*   **Execution Engine**: A robust backend runner that handles browser context, stealth evasion, and result storage.
-*   **Proxy Manager**: A dedicated system for managing and rotating HTTP/SOCKS proxies.
+- **Dashboard**: Manage your library of tasks and view execution history.
+- **Task Editor**: A drag-and-drop interface to build automation flows with real-time validation.
+- **Execution Engine**: A robust backend runner that handles browser context, stealth evasion, and result storage.
+- **Proxy Manager**: A dedicated system for managing and rotating HTTP/SOCKS proxies.
