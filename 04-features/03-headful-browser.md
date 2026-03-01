@@ -23,7 +23,7 @@ The VNC interface provides a standard desktop environment:
 
 - **Mouse/Keyboard**: Full interaction support.
 - **Clipboard**: Copy/paste text between your host and the remote browser.
-- **Resolution**: The viewport resizes dynamically (default 1280x720).
+- **Resolution**: The viewport resizes dynamically (default 1920x1080).
 
 ## Persistence
 
