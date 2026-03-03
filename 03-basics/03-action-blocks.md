@@ -52,7 +52,7 @@ Moves the mouse cursor over an element. Use this to trigger dropdown menus or to
 
 - **Selector**: The target element.
 
-### **Navigate**
+### **Navigate To**
 
 Redirects the browser to a new URL. Use this to start a flow or move to a different page.
 
