@@ -1,6 +1,6 @@
 # Scroll
 
-In modern web pages, content is frequently hidden below the initial viewport, loading dynamically only as the user scrolls downwards (a technique known as infinite scrolling or lazy loading). The **Scroll** block in Doppelganger simulates human scrolling behavior, allowing you to access this obscured content.
+In modern web pages, content is frequently hidden below the initial viewport, loading dynamically only as the user scrolls downwards (a technique known as infinite scrolling or lazy loading). The **Scroll** block in figranium simulates human scrolling behavior, allowing you to access this obscured content.
 
 ## 1. Understanding the Scroll Block
 

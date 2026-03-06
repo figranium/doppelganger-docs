@@ -1,6 +1,6 @@
 # Chaining Tasks
 
-Automating complex workflows sometimes requires breaking down processes into smaller, manageable tasks. The **Start Task** block in Doppelganger allows you to trigger another task from within the current task, enabling you to build modular and reusable workflows.
+Automating complex workflows sometimes requires breaking down processes into smaller, manageable tasks. The **Start Task** block in figranium allows you to trigger another task from within the current task, enabling you to build modular and reusable workflows.
 
 ## 1. Why Chain Tasks?
 

@@ -34,4 +34,4 @@ Immediately following the click, insert the **Wait for Downloads** block.
 
 ### Step 3: Accessing the Download
 
-Once the download is complete, Doppelganger automatically registers the file in the task's execution results. You can access downloaded files through the `downloads` array in the final execution result payload, which contains the file `name`, `url`, and local `path`.
+Once the download is complete, figranium automatically registers the file in the task's execution results. You can access downloaded files through the `downloads` array in the final execution result payload, which contains the file `name`, `url`, and local `path`.

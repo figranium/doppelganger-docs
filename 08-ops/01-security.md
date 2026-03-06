@@ -1,10 +1,10 @@
 # Security Best Practices
 
-Securing your Doppelganger instance is critical, especially when running on a public server.
+Securing your figranium instance is critical, especially when running on a public server.
 
 ## 1. Authentication
 
-By default, the Doppelganger UI requires an account. However, you should also:
+By default, the figranium UI requires an account. However, you should also:
 
 - **API Key**: Generate a strong API Key in **Settings > System**.
 - **Rotate**: Regularly regenerate the API key if you suspect it's compromised.
@@ -31,13 +31,13 @@ Server-Side Request Forgery (SSRF) is a risk when allowing users to trigger scra
 
 ## 4. Session Security
 
-- **HTTPS**: Always run Doppelganger behind a reverse proxy (Nginx, Caddy) that handles TLS/SSL.
+- **HTTPS**: Always run figranium behind a reverse proxy (Nginx, Caddy) that handles TLS/SSL.
 - **Secure Cookies**: Set `SESSION_COOKIE_SECURE=true` in your `.env` file to ensure cookies are only sent over HTTPS.
 - **Strong Secret**: Ensure `SESSION_SECRET` is a long, random string.
 
 ## 5. Rate Limiting
 
-Doppelganger includes built-in rate limiting to prevent abuse.
+figranium includes built-in rate limiting to prevent abuse.
 
 - **Authentication**: Max 10 failed login attempts per 15 minutes (`AUTH_RATE_LIMIT_MAX`).
 - **Data API**: Max 100 data requests per 15 minutes (`DATA_RATE_LIMIT_MAX`).

@@ -1,6 +1,6 @@
 # Control Flow
 
-Doppelganger provides robust control flow mechanisms to handle dynamic web pages, pagination, and multi-step processes.
+figranium provides robust control flow mechanisms to handle dynamic web pages, pagination, and multi-step processes.
 
 ## Conditional Execution (**If**)
 

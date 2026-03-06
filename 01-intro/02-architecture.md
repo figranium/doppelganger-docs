@@ -1,10 +1,10 @@
-# Doppelganger Architecture
+# figranium Architecture
 
-Doppelganger is a modular, event-driven automation platform built on top of the NodeJS ecosystem. It is designed to be self-contained and run on a single server, with optional scalability via container orchestration.
+figranium is a modular, event-driven automation platform built on top of the NodeJS ecosystem. It is designed to be self-contained and run on a single server, with optional scalability via container orchestration.
 
 ## High-Level Overview
 
-Doppelganger is composed of three main layers:
+figranium is composed of three main layers:
 
 1.  **Frontend (UI)**
 2.  **Backend (API & Runner)**
@@ -42,7 +42,7 @@ Doppelganger is composed of three main layers:
 
 ## Data Storage
 
-Doppelganger uses a **file-based storage system** by default, keeping all data local to the deployment directory. This simplifies backup and migration.
+figranium uses a **file-based storage system** by default, keeping all data local to the deployment directory. This simplifies backup and migration.
 
 - `data/tasks.json`: Stores task definitions.
 - `data/executions.json`: Logs execution history and metadata.

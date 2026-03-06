@@ -1,6 +1,6 @@
 # Captures & Storage
 
-Doppelganger automatically captures visual evidence of your automation runs. This is crucial for debugging, auditing, and ensuring quality.
+figranium automatically captures visual evidence of your automation runs. This is crucial for debugging, auditing, and ensuring quality.
 
 ## Screenshots
 
@@ -19,7 +19,7 @@ You can trigger additional screenshots during an `agent` task using the `screens
 
 ## Video Recordings
 
-Doppelganger can record full session videos (WebM format).
+figranium can record full session videos (WebM format).
 
 - **Enable**: Set `disableRecording` to `false` in the task editor.
 - **Location**: `public/captures/<run_id>.webm`
@@ -29,7 +29,7 @@ Doppelganger can record full session videos (WebM format).
 
 ## Cookie Persistence
 
-Doppelganger stores cookies and local storage state in `storage_state.json`.
+figranium stores cookies and local storage state in `storage_state.json`.
 
 - **Persistence**: Cookies persist across browser restarts and task executions (unless `statelessExecution` is enabled).
 - **Management**: View and delete individual cookies in **Settings > Data**.
@@ -50,4 +50,4 @@ Screenshots and videos accumulate in `public/captures`. You can delete them:
 
 ### Execution Logs
 
-Execution metadata is stored in `data/executions.json`. This file grows over time. Doppelganger automatically rotates logs (configurable via `MAX_EXECUTIONS` in `server/constants.js`, default 500) to prevent unlimited growth.
+Execution metadata is stored in `data/executions.json`. This file grows over time. figranium automatically rotates logs (configurable via `MAX_EXECUTIONS` in `server/constants.js`, default 500) to prevent unlimited growth.

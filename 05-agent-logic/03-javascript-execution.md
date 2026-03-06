@@ -1,6 +1,6 @@
 # JavaScript Execution
 
-Doppelganger allows you to execute custom JavaScript in the browser context at any point in a task. This is the most powerful feature for handling complex logic, data transformation, and unsupported interactions.
+figranium allows you to execute custom JavaScript in the browser context at any point in a task. This is the most powerful feature for handling complex logic, data transformation, and unsupported interactions.
 
 ## The **Run JavaScript** Block
 
@@ -20,7 +20,7 @@ The return value of your script is captured and stored in `block.output`.
 
 - **String/Number/Boolean**: Saved directly.
 - **Object/Array**: Automatically JSON stringified.
-- **Promise**: Doppelganger awaits the promise resolution.
+- **Promise**: figranium awaits the promise resolution.
 
 ### Examples
 
@@ -52,7 +52,7 @@ return total;
 **4. Using Variables**
 
 ```javascript
-const user = "{$username}"; // Injected by Doppelganger
+const user = "{$username}"; // Injected by figranium
 document.cookie = `user=${user}; path=/`;
 ```
 

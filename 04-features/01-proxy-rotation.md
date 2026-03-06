@@ -1,6 +1,6 @@
 # Proxy Rotation
 
-Doppelganger includes a robust proxy management system to evade IP-based blocking. You can configure proxies globally or enable rotation on a per-task basis.
+figranium includes a robust proxy management system to evade IP-based blocking. You can configure proxies globally or enable rotation on a per-task basis.
 
 ## Configuring Proxies
 
@@ -20,7 +20,7 @@ You can bulk import proxies using a JSON or text file
 
 ## Rotation Strategies
 
-Doppelganger supports two rotation modes:
+figranium supports two rotation modes:
 
 1.  **Round-Robin**: Cycles through the list sequentially (Proxy 1 -> Proxy 2 -> ...). This ensures even usage.
 2.  **Random**: Picks a random proxy from the list for each execution.

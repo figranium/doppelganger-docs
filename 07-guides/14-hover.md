@@ -1,6 +1,6 @@
 # Hover
 
-In many modern websites, interacting with elements requires more than just a simple click. Some elements only become visible or interactable when you move the mouse pointer over a specific area. The **Hover** block in Doppelganger allows you to simulate this mouse movement.
+In many modern websites, interacting with elements requires more than just a simple click. Some elements only become visible or interactable when you move the mouse pointer over a specific area. The **Hover** block in figranium allows you to simulate this mouse movement.
 
 ## 1. Understanding the Hover Block
 

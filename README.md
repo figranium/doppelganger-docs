@@ -1,6 +1,6 @@
-# Doppelganger Documentation
+# figranium Documentation
 
-Welcome to the official documentation for Doppelganger, the self-hosted browser automation platform.
+Welcome to the official documentation for figranium, the self-hosted browser automation platform.
 
 ## 📚 Table of Contents
 

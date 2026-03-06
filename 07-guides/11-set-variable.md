@@ -4,7 +4,7 @@ The **Set Variable** action block allows you to store, update, or manipulate val
 
 ## 1. How Set Variable Works
 
-Variables in a Doppelganger task act as temporary storage containers. The **Set Variable** action lets you define a variable's name and assign it a value.
+Variables in a figranium task act as temporary storage containers. The **Set Variable** action lets you define a variable's name and assign it a value.
 
 - **Var Name**: The name of the variable you want to create or update (e.g., `itemCount`, `pageTitle`, `isFinished`).
 - **Value**: The data you want to store in the variable. This can be a static value or a dynamic JavaScript expression.
