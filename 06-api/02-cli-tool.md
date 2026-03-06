@@ -5,7 +5,7 @@ figranium can be run entirely from the command line, either interactively or for
 ## Global Installation
 
 ```bash
-npm install -g @doppelgangerdev/doppelganger
+npm install -g figranium
 ```
 
 ## Commands
@@ -15,9 +15,9 @@ npm install -g @doppelgangerdev/doppelganger
 Run the standard figranium server (API + UI).
 
 ```bash
-doppelganger
+figranium
 # or
-npx @doppelgangerdev/doppelganger
+npx figranium
 ```
 
 ### Modes
@@ -27,7 +27,7 @@ npx @doppelgangerdev/doppelganger
 Runs a high-performance scraping task without the full agent logic. Ideal for simple data extraction.
 
 ```bash
-doppelganger --scrape --url "https://example.com" --selector ".content"
+figranium --scrape --url "https://example.com" --selector ".content"
 ```
 
 - `--url`: Target URL.
@@ -39,7 +39,7 @@ doppelganger --scrape --url "https://example.com" --selector ".content"
 Launches a visible browser session for debugging.
 
 ```bash
-doppelganger --headful --url "https://example.com"
+figranium --headful --url "https://example.com"
 ```
 
 #### Agent Mode (`--agent`)
@@ -47,7 +47,7 @@ doppelganger --headful --url "https://example.com"
 Executes a saved task by ID or a JSON definition file.
 
 ```bash
-doppelganger --agent --task "task_id_or_file.json"
+figranium --agent --task "task_id_or_file.json"
 ```
 
 ## Environment Variables
