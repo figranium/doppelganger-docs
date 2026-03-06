@@ -15,7 +15,7 @@ This guide covers the recommended installation method using Docker Compose. This
 Clone the figranium repository to your local machine:
 
 ```bash
-git clone https://github.com/mnemosynestack/figranium.git
+git clone https://github.com/figranium/figranium.git
 cd figranium
 ```
 
