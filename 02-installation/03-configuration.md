@@ -1,6 +1,6 @@
 # Configuration
 
-figranium uses environment variables to configure key aspects of the server and automation environment. These variables are defined in `src/server/constants.js`.
+Figranium uses environment variables to configure key aspects of the server and automation environment. These variables are defined in `src/server/constants.js`.
 
 ## Core Variables
 
