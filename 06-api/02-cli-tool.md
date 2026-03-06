@@ -1,23 +1,23 @@
 # CLI Tool & Standalone Scripts
 
-Doppelganger can be run entirely from the command line, either interactively or for automated scripting.
+figranium can be run entirely from the command line, either interactively or for automated scripting.
 
 ## Global Installation
 
 ```bash
-npm install -g @doppelgangerdev/doppelganger
+npm install -g @figraniumdev/figranium
 ```
 
 ## Commands
 
 ### Start Server
 
-Run the standard Doppelganger server (API + UI).
+Run the standard figranium server (API + UI).
 
 ```bash
-doppelganger
+figranium
 # or
-npx @doppelgangerdev/doppelganger
+npx @figraniumdev/figranium
 ```
 
 ### Modes
@@ -27,7 +27,7 @@ npx @doppelgangerdev/doppelganger
 Runs a high-performance scraping task without the full agent logic. Ideal for simple data extraction.
 
 ```bash
-doppelganger --scrape --url "https://example.com" --selector ".content"
+figranium --scrape --url "https://example.com" --selector ".content"
 ```
 
 - `--url`: Target URL.
@@ -39,7 +39,7 @@ doppelganger --scrape --url "https://example.com" --selector ".content"
 Launches a visible browser session for debugging.
 
 ```bash
-doppelganger --headful --url "https://example.com"
+figranium --headful --url "https://example.com"
 ```
 
 #### Agent Mode (`--agent`)
@@ -47,7 +47,7 @@ doppelganger --headful --url "https://example.com"
 Executes a saved task by ID or a JSON definition file.
 
 ```bash
-doppelganger --agent --task "task_id_or_file.json"
+figranium --agent --task "task_id_or_file.json"
 ```
 
 ## Environment Variables
@@ -60,8 +60,8 @@ CLI commands respect the same environment variables as the server:
 
 ## Scripting
 
-You can pipe JSON into Doppelganger for complex workflows:
+You can pipe JSON into figranium for complex workflows:
 
 ```bash
-echo '{"url": "https://example.com", "actions": [{"type": "screenshot"}]}' | doppelganger --agent
+echo '{"url": "https://example.com", "actions": [{"type": "screenshot"}]}' | figranium --agent
 ```

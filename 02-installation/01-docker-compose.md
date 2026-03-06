@@ -12,16 +12,16 @@ This guide covers the recommended installation method using Docker Compose. This
 
 ### 1. Clone the Repository
 
-Clone the Doppelganger repository to your local machine:
+Clone the figranium repository to your local machine:
 
 ```bash
-git clone https://github.com/mnemosynestack/doppelganger.git
-cd doppelganger
+git clone https://github.com/mnemosynestack/figranium.git
+cd figranium
 ```
 
 ### 2. Configure Environment (Optional)
 
-By default, Doppelganger works out of the box. However, you can create a `.env` file to customize settings like ports or security keys.
+By default, figranium works out of the box. However, you can create a `.env` file to customize settings like ports or security keys.
 
 Create a `.env` file in the root directory:
 
@@ -47,7 +47,7 @@ docker compose up --build -d
 
 This command will:
 
-1.  Build the Doppelganger Docker image.
+1.  Build the figranium Docker image.
 2.  Start the container and map port `11345` (default) to your host.
 3.  Mount the `data/` directory to persist your tasks and settings.
 
@@ -57,7 +57,7 @@ Once the container is running, open your browser and navigate to:
 
 [http://localhost:11345](http://localhost:11345)
 
-You should see the Doppelganger dashboard or setup screen.
+You should see the figranium dashboard or setup screen.
 
 ## Managing the Container
 
@@ -88,7 +88,7 @@ docker compose up --build -d
 
 ## Volume Persistence
 
-Doppelganger uses a `data/` volume mount to ensure your tasks, proxies, and settings persist even if you delete the container.
+figranium uses a `data/` volume mount to ensure your tasks, proxies, and settings persist even if you delete the container.
 
 - `./data`: Stores `tasks.json`, `proxies.json`, `settings.json`, and execution logs.
 - `./public/captures`: Stores screenshots and recordings.

@@ -1,6 +1,6 @@
 # Data Extraction
 
-Doppelganger offers powerful tools to extract structured data from web pages. The extraction process runs **after** all automation steps are complete.
+figranium offers powerful tools to extract structured data from web pages. The extraction process runs **after** all automation steps are complete.
 
 ## Extraction Script
 
@@ -19,7 +19,7 @@ The script has access to:
 The script must return a value (String, Object, Array). This value is saved as the `result` of the execution.
 
 - **JSON**: Automatically formatted.
-- **CSV**: If `extractionFormat` is set to `csv`, Doppelganger attempts to convert an array of objects to CSV.
+- **CSV**: If `extractionFormat` is set to `csv`, figranium attempts to convert an array of objects to CSV.
 
 ### Example: Extracting a Product List
 
@@ -56,7 +56,7 @@ If you select **CSV** as the output format:
 
 1.  Ensure your script returns an **Array of Objects**.
 2.  Keys in the first object become the CSV headers.
-3.  Doppelganger handles quoting and escaping automatically.
+3.  figranium handles quoting and escaping automatically.
 
 ```javascript
 return [

@@ -1,6 +1,6 @@
 # On Error
 
-In automated workflows, things don't always go according to plan. Elements might load slowly, popups could block the screen, or network requests may time out. The **On Error** block in Doppelganger provides a robust mechanism to handle these unexpected situations gracefully, preventing your tasks from failing completely.
+In automated workflows, things don't always go according to plan. Elements might load slowly, popups could block the screen, or network requests may time out. The **On Error** block in figranium provides a robust mechanism to handle these unexpected situations gracefully, preventing your tasks from failing completely.
 
 ## 1. Understanding Error Handling
 

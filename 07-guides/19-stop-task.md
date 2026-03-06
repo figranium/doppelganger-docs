@@ -1,6 +1,6 @@
 # Stop Task
 
-The **Stop Task** block in Doppelganger provides a way to gracefully or forcefully terminate the execution of a task before it reaches the end of its defined sequence.
+The **Stop Task** block in figranium provides a way to gracefully or forcefully terminate the execution of a task before it reaches the end of its defined sequence.
 
 ## 1. Why Use Stop Task?
 

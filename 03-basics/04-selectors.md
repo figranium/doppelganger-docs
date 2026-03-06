@@ -1,6 +1,6 @@
 # CSS Selectors
 
-Selectors are the "coordinates" Doppelganger uses to find and interact with elements on a webpage. Doppelganger relies heavily on **CSS Selectors** (and sometimes XPath, though CSS is preferred for speed and readability).
+Selectors are the "coordinates" figranium uses to find and interact with elements on a webpage. figranium relies heavily on **CSS Selectors** (and sometimes XPath, though CSS is preferred for speed and readability).
 
 ## Basic Selectors
 
@@ -23,7 +23,7 @@ Selectors are the "coordinates" Doppelganger uses to find and interact with elem
 
 ## Testing Selectors
 
-The Doppelganger Editor includes a **Highlight** feature (planned) or you can use the browser's developer tools:
+The figranium Editor includes a **Highlight** feature (planned) or you can use the browser's developer tools:
 
 1.  Right-click an element > Inspect.
 2.  Press `Ctrl+F` in the Elements tab.

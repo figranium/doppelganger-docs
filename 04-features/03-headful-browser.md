@@ -1,6 +1,6 @@
 # Headful Debugging (VNC)
 
-Doppelganger includes powerful **Headful Debugging** capabilities that allow you to see and interact with the automation as it runs. This is powered by a VNC server running alongside the Playwright container.
+figranium includes powerful **Headful Debugging** capabilities that allow you to see and interact with the automation as it runs. This is powered by a VNC server running alongside the Playwright container.
 
 ## Why Headful?
 

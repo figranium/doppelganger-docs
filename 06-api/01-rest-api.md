@@ -1,6 +1,6 @@
 # REST API Reference
 
-Doppelganger exposes a local REST API for task management, execution, and data retrieval.
+figranium exposes a local REST API for task management, execution, and data retrieval.
 
 **Base URL**: `http://localhost:11345` (default)
 **Headers**:

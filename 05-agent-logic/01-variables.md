@@ -1,6 +1,6 @@
 # Variables & Templating
 
-Doppelganger uses a powerful variable system to make tasks reusable and dynamic.
+figranium uses a powerful variable system to make tasks reusable and dynamic.
 
 ## Variable Syntax
 
@@ -8,11 +8,11 @@ Anywhere in a task (URL, Selectors, Action Values, Scripts), you can reference a
 
 **Example**:
 
-- **Variable**: `query` = "doppelganger automation"
+- **Variable**: `query` = "figranium automation"
 - **Action**: Type into `input[name="q"]`
 - **Value**: `{$query}`
 
-When executed, Doppelganger replaces `{$query}` with "doppelganger automation".
+When executed, figranium replaces `{$query}` with "figranium automation".
 
 ## Defining Variables
 
@@ -23,7 +23,7 @@ When executed, Doppelganger replaces `{$query}` with "doppelganger automation".
 
 ## Special Variables
 
-Doppelganger provides several built-in variables:
+figranium provides several built-in variables:
 
 - `{$now}`: Current ISO timestamp.
 - `block.output`: The result of the previous action (e.g., text from a `javascript` block).

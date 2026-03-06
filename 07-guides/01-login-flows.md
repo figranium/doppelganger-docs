@@ -1,6 +1,6 @@
 # Login Flows
 
-Automating login flows is a common use case for Doppelganger. This guide walks you through building a robust login task.
+Automating login flows is a common use case for figranium. This guide walks you through building a robust login task.
 
 ## 1. Identify Selectors
 

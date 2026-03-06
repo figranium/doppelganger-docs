@@ -48,7 +48,7 @@ Inside the `foreach` block, use `javascript` to extract data from `loop.item`.
 
 ### Step 5: Collect Results
 
-Doppelganger automatically collects `block.output` from each iteration if you use a `merge` action or build a custom array in a final extraction script.
+figranium automatically collects `block.output` from each iteration if you use a `merge` action or build a custom array in a final extraction script.
 
 **Alternative**: Use a single Extraction Script at the end (often simpler).
 

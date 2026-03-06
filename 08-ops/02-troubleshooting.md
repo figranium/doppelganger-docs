@@ -1,6 +1,6 @@
 # Troubleshooting
 
-Common issues and solutions when running Doppelganger.
+Common issues and solutions when running figranium.
 
 ## 1. Browser fails to launch
 
@@ -17,7 +17,7 @@ Common issues and solutions when running Doppelganger.
 - **Cause**: The browser crashed due to memory limits.
 - **Fix**:
   - Increase Docker memory: `--memory="2g" --shm-size="1g"`.
-  - Use `--disable-dev-shm-usage` flag (Doppelganger does this by default).
+  - Use `--disable-dev-shm-usage` flag (figranium does this by default).
 
 ## 2. Proxies not working
 
@@ -38,7 +38,7 @@ Common issues and solutions when running Doppelganger.
   - Use **Headful Debugging** to inspect the page live.
   - Increase `wait` time before the action.
   - Use `wait_selector` explicitly.
-  - Check for iframes (Doppelganger does not support cross-origin iframes yet).
+  - Check for iframes (figranium does not support cross-origin iframes yet).
 
 ## 4. Session Expired frequently
 
