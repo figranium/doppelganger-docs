@@ -1,6 +1,6 @@
-# figranium Architecture
+# Figranium Architecture
 
-figranium is a modular, event-driven automation platform built on top of the NodeJS ecosystem. It is designed to be self-contained and run on a single server, with optional scalability via container orchestration.
+Figranium is a modular, event-driven automation platform built on top of the NodeJS ecosystem. It is designed to be self-contained and run on a single server, with optional scalability via container orchestration.
 
 ## High-Level Overview
 
