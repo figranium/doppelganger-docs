@@ -25,6 +25,13 @@ Pauses execution for a fixed duration. Use this when you need a simple delay, th
 
 - **Value**: Duration in seconds (e.g., `2.5`).
 
+### **Select** (`select`)
+
+Selects an option from a `<select>` dropdown menu. Use this to interact with forms that require a specific choice from a dropdown.
+
+- **Selector**: The CSS selector of the `<select>` element.
+- **Value**: The value of the option to select. Can include `{$variables}`.
+
 ### **Wait for Selector** (`wait_selector`)
 
 Waits until a specific element appears in the DOM. Use this to ensure the page has loaded the content you need before proceeding.
