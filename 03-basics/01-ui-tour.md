@@ -1,6 +1,6 @@
 # UI Tour
 
-figranium's user interface is designed for simplicity and power. It consists of four main sections: **Dashboard**, **Editor**, **Captures**, and **Settings**.
+Figranium's user interface is designed for simplicity and power. It consists of four main sections: **Dashboard**, **Editor**, **Captures**, and **Settings**.
 
 ## 1. Dashboard (`/dashboard`)
 
