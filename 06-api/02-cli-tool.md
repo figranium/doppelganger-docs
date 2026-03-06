@@ -5,7 +5,7 @@ figranium can be run entirely from the command line, either interactively or for
 ## Global Installation
 
 ```bash
-npm install -g @figraniumdev/figranium
+npm install -g @doppelgangerdev/doppelganger
 ```
 
 ## Commands
@@ -15,9 +15,9 @@ npm install -g @figraniumdev/figranium
 Run the standard figranium server (API + UI).
 
 ```bash
-figranium
+doppelganger
 # or
-npx @figraniumdev/figranium
+npx @doppelgangerdev/doppelganger
 ```
 
 ### Modes
@@ -27,7 +27,7 @@ npx @figraniumdev/figranium
 Runs a high-performance scraping task without the full agent logic. Ideal for simple data extraction.
 
 ```bash
-figranium --scrape --url "https://example.com" --selector ".content"
+doppelganger --scrape --url "https://example.com" --selector ".content"
 ```
 
 - `--url`: Target URL.
@@ -39,7 +39,7 @@ figranium --scrape --url "https://example.com" --selector ".content"
 Launches a visible browser session for debugging.
 
 ```bash
-figranium --headful --url "https://example.com"
+doppelganger --headful --url "https://example.com"
 ```
 
 #### Agent Mode (`--agent`)
@@ -47,7 +47,7 @@ figranium --headful --url "https://example.com"
 Executes a saved task by ID or a JSON definition file.
 
 ```bash
-figranium --agent --task "task_id_or_file.json"
+doppelganger --agent --task "task_id_or_file.json"
 ```
 
 ## Environment Variables
@@ -63,5 +63,5 @@ CLI commands respect the same environment variables as the server:
 You can pipe JSON into figranium for complex workflows:
 
 ```bash
-echo '{"url": "https://example.com", "actions": [{"type": "screenshot"}]}' | figranium --agent
+echo '{"url": "https://example.com", "actions": [{"type": "screenshot"}]}' | doppelganger --agent
 ```

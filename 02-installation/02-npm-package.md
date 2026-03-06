@@ -12,7 +12,7 @@ This guide covers installing figranium as a standalone NPM package. This is idea
 To install figranium globally:
 
 ```bash
-npm install -g @figraniumdev/figranium
+npm install -g @doppelgangerdev/doppelganger
 ```
 
 ### Running the CLI
@@ -20,7 +20,7 @@ npm install -g @figraniumdev/figranium
 Once installed, you can start the application using:
 
 ```bash
-figranium
+doppelganger
 ```
 
 This will launch the figranium server on the default port (11345).
@@ -36,7 +36,7 @@ Open your browser and navigate to:
 If you don't want to install figranium globally, you can run it directly using `npx`:
 
 ```bash
-npx @figraniumdev/figranium
+npx @doppelgangerdev/doppelganger
 ```
 
 This will execute the latest version of figranium without a global installation.
@@ -46,24 +46,24 @@ This will execute the latest version of figranium without a global installation.
 You can customize the environment variables by passing them before the command:
 
 ```bash
-PORT=8080 SESSION_SECRET=mysecret figranium
+PORT=8080 SESSION_SECRET=mysecret doppelganger
 ```
 
 Or with `npx`:
 
 ```bash
-PORT=8080 SESSION_SECRET=mysecret npx @figraniumdev/figranium
+PORT=8080 SESSION_SECRET=mysecret npx @doppelgangerdev/doppelganger
 ```
 
 ## Running Scripts (Advanced)
 
 The NPM package also exposes specific scripts for different modes:
 
-- **Scraper Mode**: `figranium --scrape` (Runs the high-performance scraper).
-- **Agent Mode**: `figranium --agent` (Runs the full automation agent).
+- **Scraper Mode**: `doppelganger --scrape` (Runs the high-performance scraper).
+- **Agent Mode**: `doppelganger --agent` (Runs the full automation agent).
 
 Additionally, you can run a debugging session:
 
-- **Headful Execution**: `figranium --headful` (Opens the interactive browser for debugging).
+- **Headful Execution**: `doppelganger --headful` (Opens the interactive browser for debugging).
 
 For more details on CLI usage, see [CLI Tool Documentation](../06-api/02-cli-tool.md).
