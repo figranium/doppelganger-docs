@@ -1,6 +1,6 @@
-# figranium Overview
+# Figranium Overview
 
-figranium is a self-hosted, block-based browser automation platform designed for teams and developers who need predictable, auditable, and secure automation workflows without relying on third-party SaaS solutions.
+Figranium is a self-hosted, block-based browser automation platform designed for teams and developers who need predictable, auditable, and secure automation workflows without relying on third-party SaaS solutions.
 
 At its core, figranium combines the power of **Playwright** for browser instrumentation with a **React-based visual editor** and an **Express.js backend** to manage tasks, proxies, and executions.
 
