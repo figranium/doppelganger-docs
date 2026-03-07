@@ -46,7 +46,7 @@ Once the build is complete and the containers are running, open your browser and
 To update your installation to the latest version, pull the latest changes from the repository and rebuild the image:
 
 ```bash
-git pull origin main
+git pull
 docker compose up --build -d
 ```
 
