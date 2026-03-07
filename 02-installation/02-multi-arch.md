@@ -59,4 +59,4 @@ docker compose up --build -d
 | **Architecture** | Supports common architectures | Supports all architectures |
 | **Customization** | Limited to environment variables | Full access to source code |
 
-We recommend using the [GHCR method](03-docker-image.md) whenever possible, as it is faster and more streamlined. Use this Git Clone method if you encounter architecture-related issues or need to modify the source code.
+We recommend using the [GHCR method](01-docker-compose.md) whenever possible, as it is faster and more streamlined. Use this Git Clone method if you encounter architecture-related issues or need to modify the source code.
