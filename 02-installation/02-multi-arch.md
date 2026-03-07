@@ -2,7 +2,7 @@
 
 This guide covers the secondary installation method for Figranium, which is suitable for all architectures (x86_64, ARM64, etc.) by building the Docker image locally.
 
-While the primary and recommended installation method is using the pre-built images from [GitHub Container Registry (GHCR)](03-docker-image.md), this method provides a reliable fallback for environments where pre-built images might not be optimal or available.
+While the primary and recommended installation method is using the pre-built images from [GitHub Container Registry (GHCR)](01-docker-compose.md), this method provides a reliable fallback for environments where pre-built images might not be optimal or available.
 
 ## Prerequisites
 
