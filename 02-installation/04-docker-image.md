@@ -13,7 +13,7 @@ This guide covers installing Figranium using the pre-built Docker image hosted o
 Pull the latest version of the Figranium image from Docker Hub:
 
 ```bash
-docker pull mnemosynestack/doppelganger:latest
+docker pull mnemosyneai/doppelganger:latest
 ```
 
 ### 2. Run the Container
@@ -26,7 +26,7 @@ docker run -d \
   -p 11345:11345 \
   -p 54311:54311 \
   -v figranium_data:/app/data \
-  mnemosynestack/doppelganger:latest
+  mnemosyneai/doppelganger:latest
 ```
 
 This command will:
@@ -54,7 +54,7 @@ docker run -d \
   -e PORT=11345 \
   -e SESSION_SECRET=your_secret_here \
   -v figranium_data:/app/data \
-  mnemosynestack/doppelganger:latest
+  mnemosyneai/doppelganger:latest
 ```
 
 ## Volume Persistence
