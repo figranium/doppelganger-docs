@@ -1,55 +1,59 @@
 # Installation with Docker Compose (Recommended)
 
-This guide covers the recommended installation method using Docker Compose. This ensures a consistent environment across different platforms (Linux, macOS, Windows).
+This guide covers the recommended installation method using Docker Compose. This ensures a consistent environment across different platforms (Linux, macOS, Windows) and simplifies dependency management.
 
 ## Prerequisites
 
-- [Git](https://git-scm.com/downloads) installed.
 - [Docker](https://docs.docker.com/get-docker/) installed and running.
 - [Docker Compose](https://docs.docker.com/compose/install/) (usually included with Docker Desktop).
 
 ## Step-by-Step Installation
 
-### 1. Clone the Repository
+### 1. Create a Project Directory
 
-Clone the figranium repository to your local machine:
-
-```bash
-git clone https://github.com/figranium/figranium.git
-cd figranium
-```
-
-### 2. Configure Environment (Optional)
-
-By default, figranium works out of the box. However, you can create a `.env` file to customize settings like ports or security keys.
-
-Create a `.env` file in the root directory:
+Create a directory for your Figranium installation and navigate into it:
 
 ```bash
-touch .env
+mkdir figranium-server
+cd figranium-server
 ```
 
-Add your custom configuration (see [Configuration Guide](../02-installation/03-configuration.md) for details):
+### 2. Create `docker-compose.yml`
 
-```env
-# Example .env
-PORT=11345
-SESSION_SECRET=your_secure_random_string
+Create a `docker-compose.yml` file in your project directory:
+
+```yaml
+version: '3.8'
+
+services:
+  figranium:
+    image: ghcr.io/figranium/figranium:latest
+    container_name: figranium
+    ports:
+      - "11345:11345"
+      - "54311:54311"
+    volumes:
+      - ./data:/app/data
+      - ./captures:/app/public/captures
+    environment:
+      - PORT=11345
+      - SESSION_SECRET=your_secure_random_string
+    restart: unless-stopped
 ```
 
 ### 3. Start with Docker Compose
 
-Run the following command to build and start the application in detached mode:
+Run the following command to start the application in detached mode:
 
 ```bash
-docker compose up --build -d
+docker compose up -d
 ```
 
 This command will:
 
-1.  Build the figranium Docker image.
-2.  Start the container and map port `11345` (default) to your host.
-3.  Mount the `data/` directory to persist your tasks and settings.
+1.  Pull the Figranium Docker image from GHCR.
+2.  Start the container and map the necessary ports.
+3.  Mount local directories to persist your tasks, settings, and captures.
 
 ### 4. Access the Application
 
@@ -57,7 +61,7 @@ Once the container is running, open your browser and navigate to:
 
 [http://localhost:11345](http://localhost:11345)
 
-You should see the figranium dashboard or setup screen.
+You should see the Figranium dashboard.
 
 ## Managing the Container
 
@@ -79,18 +83,18 @@ docker compose down
 
 ### Update the Application
 
-To update to the latest version, pull the changes and rebuild:
+To update to the latest version, pull the latest image and restart:
 
 ```bash
-git pull
-docker compose up --build -d
+docker compose pull
+docker compose up -d
 ```
 
 ## Volume Persistence
 
-figranium uses a `data/` volume mount to ensure your tasks, proxies, and settings persist even if you delete the container.
+Figranium uses volume mounts to ensure your data persists even if you delete the container.
 
 - `./data`: Stores `tasks.json`, `proxies.json`, `settings.json`, and execution logs.
-- `./public/captures`: Stores screenshots and recordings.
+- `./captures`: Stores screenshots and recordings.
 
-If you need to backup your data, simply copy the `data/` folder.
+If you need to backup your data, simply copy these folders.
