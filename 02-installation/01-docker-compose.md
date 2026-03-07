@@ -59,7 +59,7 @@ Once the container is running, open your browser and navigate to:
 
 [http://localhost:11345](http://localhost:11345)
 
-You should see the setup screem.
+You should see the setup screen.
 
 ## Managing the Container
 
