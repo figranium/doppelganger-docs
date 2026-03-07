@@ -1,6 +1,6 @@
-# Installation via Docker Image
+# Installation via Docker Image (Standalone)
 
-This guide covers installing Figranium using the pre-built Docker image hosted on Docker Hub. This is a secondary installation method, ideal for environments where you don't want to clone the repository.
+This guide covers installing Figranium using the pre-built Docker image hosted on the GitHub Container Registry (GHCR). This is the primary installation method, ideal for standalone deployments.
 
 ## Prerequisites
 
@@ -10,10 +10,10 @@ This guide covers installing Figranium using the pre-built Docker image hosted o
 
 ### 1. Pull the Docker Image
 
-Pull the latest version of the Figranium image from Docker Hub:
+Pull the latest version of the Figranium image from GHCR:
 
 ```bash
-docker pull mnemosyneai/doppelganger:latest
+docker pull ghcr.io/figranium/figranium:latest
 ```
 
 ### 2. Run the Container
@@ -26,7 +26,8 @@ docker run -d \
   -p 11345:11345 \
   -p 54311:54311 \
   -v figranium_data:/app/data \
-  mnemosyneai/doppelganger:latest
+  -v figranium_captures:/app/public/captures \
+  ghcr.io/figranium/figranium:latest
 ```
 
 This command will:
@@ -35,7 +36,7 @@ This command will:
 - Name the container `figranium`.
 - Map port `11345` for the web interface.
 - Map port `54311` for the VNC/noVNC viewer.
-- Create and mount a named volume `figranium_data` to `/app/data` for persistence.
+- Create and mount named volumes `figranium_data` (for `/app/data`) and `figranium_captures` (for `/app/public/captures`) for persistence.
 
 ### 3. Access the Application
 
@@ -54,14 +55,15 @@ docker run -d \
   -e PORT=11345 \
   -e SESSION_SECRET=your_secret_here \
   -v figranium_data:/app/data \
-  mnemosyneai/doppelganger:latest
+  -v figranium_captures:/app/public/captures \
+  ghcr.io/figranium/figranium:latest
 ```
 
 ## Volume Persistence
 
-To ensure your tasks and settings are preserved when the container is stopped or removed, always use a volume.
+To ensure your tasks, settings, and captures are preserved when the container is stopped or removed, always use volumes.
 
-- **Named Volume (Recommended)**: `-v figranium_data:/app/data`
-- **Bind Mount**: `-v /path/to/your/local/data:/app/data`
+- **Named Volumes (Recommended)**: `-v figranium_data:/app/data -v figranium_captures:/app/public/captures`
+- **Bind Mounts**: `-v /path/to/local/data:/app/data -v /path/to/local/captures:/app/public/captures`
 
-The container stores its persistent data in `/app/data`.
+The container stores its persistent data in `/app/data` and its captures in `/app/public/captures`.
