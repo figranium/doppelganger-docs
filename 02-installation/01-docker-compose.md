@@ -23,8 +23,6 @@ cd figranium-server
 Create a `docker-compose.yml` file in your project directory:
 
 ```yaml
-version: '3.8'
-
 services:
   figranium:
     image: ghcr.io/figranium/figranium:latest
